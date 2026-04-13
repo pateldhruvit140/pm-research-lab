@@ -1,0 +1,132 @@
+{
+  "design_identity": {
+    "name": "Cognitive Offloading Lab",
+    "tone": "Scientific, Precise, Modern, Focused",
+    "theme_strategy": "Light Mode Default (Clinical/Clean) with Dark Mode Toggle (Data/Focus)",
+    "archetype": "Swiss & High-Contrast (Authority) + Jewel Accents (Cognitive Depth)"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Outfit, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body": "text-base leading-relaxed",
+      "caption": "text-sm text-slate-500"
+    },
+    "rules": "Use Outfit for all headings (h1-h3). Use Inter for body text, inputs, and dense data tables. Use JetBrains Mono for data values or code snippets."
+  },
+  "colors": {
+    "primary": {
+      "default": "#4F46E5",
+      "hover": "#4338CA",
+      "foreground": "#FFFFFF",
+      "description": "Deep Indigo - Represents Cognitive Function and Focus"
+    },
+    "secondary": {
+      "default": "#06B6D4",
+      "hover": "#0891B2",
+      "foreground": "#FFFFFF",
+      "description": "Cyan - Represents Data and Scientific Precision"
+    },
+    "accent": {
+      "default": "#8B5CF6",
+      "foreground": "#FFFFFF",
+      "description": "Violet - Used for Memory/Recall moments"
+    },
+    "background": {
+      "page": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "subtle": "#F1F5F9"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B",
+      "muted": "#94A3B8"
+    },
+    "border": {
+      "default": "#E2E8F0",
+      "active": "#CBD5E1"
+    },
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    }
+  },
+  "layout": {
+    "spacing_scale": "2x standard. Use p-6 or p-8 for containers. Gap-6 for grids.",
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_strategies": {
+      "dashboard": "Bento Grid (Mode B). grid-cols-1 md:grid-cols-3 lg:grid-cols-4. Gap-6. Dense data.",
+      "marketing": "Asymmetric Tetris Grid (Mode A). grid-cols-1 md:grid-cols-12. Gap-12. Breathable.",
+      "participant": "Single Focus Column. max-w-2xl mx-auto. Distraction-free."
+    }
+  },
+  "components": {
+    "card": {
+      "base": "bg-white rounded-xl border border-slate-200 shadow-sm",
+      "hover": "hover:shadow-md hover:border-indigo-100 transition-all duration-200"
+    },
+    "button": {
+      "primary": "bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm rounded-lg px-6 py-2.5 font-medium transition-transform active:scale-95",
+      "secondary": "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 rounded-lg px-6 py-2.5 font-medium",
+      "ghost": "text-slate-600 hover:bg-slate-100 hover:text-slate-900 rounded-lg px-4 py-2"
+    },
+    "input": {
+      "base": "flex h-10 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "navigation": {
+      "sidebar": "w-64 bg-slate-900 text-slate-300 h-screen fixed left-0 top-0 overflow-y-auto",
+      "header": "h-16 border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-50"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "bg-white/70 backdrop-blur-xl border-white/20 shadow-sm (Use for sticky headers and overlays)",
+    "gradients": "Subtle mesh gradients. Use 'bg-gradient-to-br from-indigo-50 to-cyan-50' for section backgrounds.",
+    "texture": "Add 2% noise opacity to solid backgrounds to reduce digital flatness.",
+    "borders": "1px solid #E2E8F0. For 'Active' states, use 'ring-2 ring-indigo-100 border-indigo-500'."
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1698669993523-bcf101a925ef?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "abstract_neural": "https://images.unsplash.com/photo-1605946528462-2faf36290f10?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "research_lab": "https://images.unsplash.com/photo-1576669801838-1b1c52121e6a?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "data_analysis": "https://images.unsplash.com/photo-1581091013158-5c7184f43b62?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "defaults": {
+      "duration": 0.2,
+      "ease": "easeOut"
+    },
+    "transitions": "transition-all duration-200 ease-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg"
+  },
+  "accessibility": {
+    "contrast": "Ensure 4.5:1 for text. Use Slate-900 for body text on white.",
+    "focus": "focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600",
+    "reduced_motion": "Respect 'prefers-reduced-motion'. Use opacity fades instead of transforms."
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Inter' for headings. Use 'Outfit'.",
+    "Do not use full-screen heavy gradients. Use subtle mesh gradients or clean white/slate backgrounds.",
+    "Ensure all interactive elements have 'data-testid' attributes.",
+    "Use 'sonner' for toast notifications.",
+    "Components must use named exports.",
+    "Researcher Dashboard should be dense (Bento Mode B). Participant view should be focused (Single Column).",
+    "Progress Tracker should use a clean 'Linear-style' list or Gantt view, not a clunky table.",
+    "Time-compression simulation requires clear visual indicators of 'Simulated Time' vs 'Real Time'."
+  ],
+  "instructions_to_main_agent": {
+    "setup": "Install 'lucide-react', 'recharts', 'framer-motion', 'date-fns', 'clsx', 'tailwind-merge' if not present.",
+    "file_structure": "Organize by feature: /components/dashboard, /components/participant, /components/tracker.",
+    "styling": "Use Tailwind classes exclusively. Avoid inline styles.",
+    "charts": "Use Recharts for data visualization. Style them to match the Indigo/Cyan palette."
+  }
+}
